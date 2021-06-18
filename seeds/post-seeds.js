@@ -3,103 +3,103 @@ const { Post } = require('../models');
 const postdata = [
   {
     title: 'Donec posuere metus vitae ipsum.',
-    message: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+    message: '“Live as if you were to die tomorrow. Learn as if you were to live forever.”',
     user_id: 10
   },
   {
     title: 'Morbi non quam nec dui luctus rutrum.',
-    message: 'https://nasa.gov/donec.json',
+    message: '“That which does not kill us makes us stronger.”',
     user_id: 8
   },
   {
     title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    message: 'https://europa.eu/parturient/montes/nascetur/ridiculus/mus/etiam/vel.aspx',
+    message: '“Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t mind.”',
     user_id: 1
   },
   {
     title: 'Nunc purus.',
-    message: 'http://desdev.cn/enim/blandit/mi.jpg',
+    message: '“We must not allow other people’s limited perceptions to define us.”',
     user_id: 4
   },
   {
     title: 'Pellentesque eget nunc.',
-    message: 'http://google.ca/nam/nulla/integer.aspx',
+    message: '“Do what you can, with what you have, where you are.”',
     user_id: 7
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    message: 'https://stanford.edu/consequat.png',
+    message: '“Be yourself; everyone else is already taken.”',
     user_id: 4
   },
   {
     title: 'In hac habitasse platea dictumst.',
-    message: 'http://edublogs.org/non/ligula/pellentesque.js',
+    message: 'This above all: to thine own self be true.',
     user_id: 1
   },
   {
     title: 'Morbi non quam nec dui luctus rutrum.',
-    message: 'http://ucla.edu/consequat/nulla.html',
+    message: '“If you cannot do great things, do small things in a great way.”',
     user_id: 1
   },
   {
     title: 'Duis ac nibh.',
-    message: 'http://theguardian.com/dui/vel/nisl/duis/ac/nibh.aspx',
+    message: '“If opportunity doesn’t knock, build a door.”',
     user_id: 9
   },
   {
     title: 'Curabitur at ipsum ac tellus semper interdum.',
-    message: 'https://reverbnation.com/ligula/sit.jpg',
+    message: '“Wise men speak because they have something to say; fools because they have to say something.”',
     user_id: 5
   },
   {
     title: 'In hac habitasse platea dictumst.',
-    message: 'http://china.com.cn/lectus/vestibulum.json',
+    message: '“Strive not to be a success, but rather to be of value.”',
     user_id: 3
   },
   {
     title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    message: 'http://networksolutions.com/nam/ultrices/libero/non/mattis/pulvinar.json',
+    message: '“Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.”',
     user_id: 10
   },
   {
     title: 'Donec dapibus.',
-    message: 'https://instagram.com/ac/neque/duis/bibendum/morbi/non.xml',
+    message: '“Do not let what you cannot do interfere with what you can do.”',
     user_id: 8
   },
   {
     title: 'Nulla tellus.',
-    message: 'https://lycos.com/natoque/penatibus/et.html',
+    message: '“Whenever you find yourself on the side of the majority, it is time to pause and reflect.”',
     user_id: 3
   },
   {
     title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    message: 'https://gmpg.org/lorem.jpg',
+    message: '“I haven’t failed. I’ve just found 10,000 ways that won’t work.”',
     user_id: 3
   },
   {
     title:
       'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    message: 'https://paginegialle.it/mattis/egestas.jsp',
+    message: '“Either you run the day, or the day runs you.”',
     user_id: 7
   },
   {
     title: 'In hac habitasse platea dictumst.',
-    message: 'http://wikia.com/turpis/eget.jpg',
+    message: '“A journey of a thousand leagues begins beneath one’s feet.”',
     user_id: 6
   },
   {
     title: 'Etiam justo.',
-    message: 'https://shareasale.com/quis.json',
+    message: '“I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.”',
     user_id: 4
   },
   {
     title: 'Nulla ut erat id mauris vulputate elementum.',
-    message: 'http://java.com/diam/neque/vestibulum/eget/vulputate/ut/ultrices.png',
+    message: '“Life shrinks or expands in proportion to one’s courage.”',
     user_id: 6
   },
   {
     title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    message: 'https://java.com/at/nibh/in.png',
+    message: '“You must be the change you wish to see in the world.”',
     user_id: 7
   }
 ];

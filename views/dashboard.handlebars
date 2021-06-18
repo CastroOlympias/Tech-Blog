@@ -1,17 +1,20 @@
-<section>
-  <h2>Create New Post</h2>
-
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
-    </div>
-    <div>
-      <label for="post-message">Link</label>
-      <input id="post-message" name="post-message" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
+<section class="border-box">
+  <div class="blog-post-header">
+    <h2>Create A New Blog Post</h2>
+  </div>
+  <div>
+    <form class="new-post-form">
+      <div>
+        <label for="post-title">Blog Title</label>
+        <input type="text" id="post-title" name="post-title" />
+      </div>
+      <div>
+        <label for="post-message">Blog Message</label>
+        <input id="post-message" name="post-message" />
+      </div>
+      <button type="submit" class="btn">Create</button>
+    </form>
+  </div>
 </section>
 
 {{#if posts.length}}
@@ -21,9 +24,10 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post }}
-      {{> comments post.comments}}
-      
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      {{> comments post.comments}}
+
+
     </li>
     {{/each}}
   </ol>

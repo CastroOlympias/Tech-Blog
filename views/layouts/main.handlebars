@@ -10,18 +10,20 @@
 
 <body>
   <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Just Tech News</a>
-      </h1>
+    <header class="header">
+
       <nav>
-        {{#if loggedIn}}
+        <h2>{{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
+        <button id="logout" class="btn-no-style">logout</button></h2>
+        <h2>{{else}}
         <a href="/login">login</a>
         {{/if}}
+        </h2>
       </nav>
+            <h1>
+        <a href="/">Awesome Tech Blog</a>
+      </h1>
     </header>
     <main>
       {{{ body }}}

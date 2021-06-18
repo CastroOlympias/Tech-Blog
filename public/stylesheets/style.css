@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body, html {
@@ -7,7 +9,34 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  background-color: rgb(181, 238, 186);
+}
+
+.header {
+  padding: 20px;
+  background-color: rgb(46, 25, 3);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  color: rgb(181, 238, 186);
+}
+
+.border-box {
+  border: solid rgb(46, 25, 3) 4px;
+  border-radius: 15px;
+}
+
+.blog-post-header {
+  padding: 10px;
+  background: rgb(46, 25, 3);;
+}
+
+.post-message {
+  padding: 10px;
 }
 
 a {
@@ -65,14 +94,14 @@ form label {
   display: block;
 }
 
-.wrapper {
+/* .wrapper {
   width: 100%;
   min-height: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
+} */
 
 header {
   border-bottom: 1px solid #ccc;
@@ -80,10 +109,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-}
-
-header h1 {
-  font-size: 1em;
+  width: 100%;
 }
 
 main {

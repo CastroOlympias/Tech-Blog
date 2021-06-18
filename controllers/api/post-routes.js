@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
       'message',
       'title',
       'created_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+      [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id DESC)'), 'vote_count']
     ],
     include: [
       {

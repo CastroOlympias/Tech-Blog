@@ -40,7 +40,10 @@ Post.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
+      order: [
+        'id', 'DESC'
+      ]
     },
     title: {
       type: DataTypes.STRING,
@@ -49,6 +52,9 @@ Post.init(
     message: {
       type: DataTypes.STRING(1000),
       allowNull: false,
+      validate: {
+        len: [1,1000]
+      }
     },
     user_id: {
       type: DataTypes.INTEGER,
