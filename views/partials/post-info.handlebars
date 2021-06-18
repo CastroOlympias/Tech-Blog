@@ -1,15 +1,18 @@
 <article class="border-box post">
   <div class="blog-post-header title">
-    <h2>
-      {{title}} <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    <h2 class="h2">
+      <div>
+      Written by: {{user.username}}, on {{format_date created_at}} <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a> {{vote_count}} {{format_plural "Like" vote_count}}
+      </div>
+      
     </h2>
 
   </div>
-  <div class="post-message">{{message}}</div>
-  <div class="meta">
-    {{vote_count}} {{format_plural "point" vote_count}} by {{user.username}} on {{format_date created_at}}
-
-    |
-    
+  <div class="post-message">
+    {{title}}
   </div>
+  <div class="post-message">
+    {{message}}
+  </div>
+ 
 </article>

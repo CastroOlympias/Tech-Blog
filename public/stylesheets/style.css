@@ -17,11 +17,12 @@ body, html {
   background-color: rgb(46, 25, 3);
 }
 
-h1 {
+.h1 {
   font-size: 50px;
+  color: rgb(181, 238, 186);
 }
 
-h2 {
+.h2 {
   color: rgb(181, 238, 186);
 }
 
@@ -37,6 +38,18 @@ h2 {
 
 .post-message {
   padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#post-title {
+  height: 100px;
+}
+
+#post-message {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
 }
 
 a {
@@ -72,7 +85,7 @@ button:hover {
 
 textarea, input {
   padding: .5%;
-  border-radius: 5px;
+  border-radius: 15px;
   border: 1px solid #ccc;
 }
 
@@ -123,7 +136,7 @@ main {
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: rgb(181, 238, 186);
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -146,7 +159,7 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
-  width: 800px;
+  /* width: 800px; */
 }
 
 .post .title span {
@@ -189,7 +202,7 @@ main {
 }
 
 .new-post-form input {
-  width: 300px;
+  width: 100%;
 }
 
 .edit-post-form {
