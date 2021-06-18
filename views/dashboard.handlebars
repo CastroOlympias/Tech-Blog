@@ -20,7 +20,9 @@
   <ol>
     {{#each posts as |post|}}
     <li>
-      {{> post-info post}}
+      {{> post-info post }}
+      {{> comments post.comments}}
+      
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     </li>
     {{/each}}
@@ -29,3 +31,5 @@
 {{/if}}
 
 <script src="/javascript/add-post.js"></script>
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>

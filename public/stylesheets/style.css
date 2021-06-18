@@ -120,6 +120,7 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  width: 800px;
 }
 
 .post .title span {
