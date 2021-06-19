@@ -95,7 +95,7 @@ a:hover {
 
 .center-button {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   
   border: 0;
   padding: 1%;
@@ -191,13 +191,13 @@ main {
   color: #3486eb;
 }
 
-.delete-post-btn {
+/* .delete-post-btn {
   background-color: #d41414;
 }
 
 .delete-post-btn:hover {
   background-color: #ff643d;
-}
+} */
 
 .post {
   margin-top: 20px;
@@ -310,9 +310,9 @@ main {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.edit-post-form {
+/* .edit-post-form {
   margin-bottom: 5%;
-}
+} */
 
 footer {
   border-top: 1px solid #ccc;

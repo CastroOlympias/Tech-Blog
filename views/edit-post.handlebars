@@ -7,16 +7,26 @@
   <form class="edit-post-form">
     <div>
       <textarea class="h3 post-title" name="post-title" type="text" value="${{post.title}}">{{post.title}}</textarea>
-      <textarea class="h3 post-message" name="post-message" type="text" value="${{post.message}}">{{post.message}}</textarea>
+      <textarea class="h3 post-message post" name="post-message" type="text" value="${{post.message}}">{{post.message}}</textarea>
     </div>
-    <div>
+    {{!-- <div>
       {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
       |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
       {{comment_text}}
+    </div> --}}
+    <div class="center-button">
+    <button class="submit" type="submit">
+      <h2 class="h2">Updated Blog</h2>
+    </button>
+    <button class="submit delete-post-btn" type="button">
+      <h2 class="h2">Delete Blog</h2>
+    </button>
+    <button class="submit" type="submit">
+            <a class="h2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
+    </button>
     </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
+
   </form>
   </div>
 </section>
@@ -27,8 +37,10 @@
     <textarea placeholder="Please enter a comment" class="h3" name="comment-body"></textarea>
   </div>
 
-  <div>
-    <button type="submit">add comment</button>
+  <div class="center-button">
+    <button class="submit" type="submit">
+      <h2 class="h2">Post Comment</h2>
+    </button>
   </div>
 </form>
 
