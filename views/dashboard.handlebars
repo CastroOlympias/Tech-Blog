@@ -12,10 +12,10 @@
         <textarea placeholder="Enter Blog Post Here" class="h3 post-message" name="post-message"></textarea>
       </div>
       <div class="center-button">
-      <button type="submit" class="submit">
-        <h2 class="h2">Submit Post to Your Blog</h2>
+        <button type="submit" class="submit">
+          <h2 class="h2">Submit Post to Your Blog</h2>
         </button>
-        </div>
+      </div>
     </form>
   </div>
 </section>
@@ -27,12 +27,9 @@
     <li>
       {{> post-info post }}
       <div class="edit-post">
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post?</a>
+        <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post?</a>
       </div>
-
       {{> comments post.comments}}
-
-
     </li>
     {{/each}}
   </ol>

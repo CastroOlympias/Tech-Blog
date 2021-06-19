@@ -49,14 +49,14 @@ Post.init(
       type: DataTypes.STRING(500),
       allowNull: false,
       validate: {
-        len: [1,500]
+        len: [1, 500]
       }
     },
     message: {
       type: DataTypes.STRING(5000),
       allowNull: false,
       validate: {
-        len: [1,5000]
+        len: [1, 5000]
       }
     },
     user_id: {

@@ -1,35 +1,31 @@
 <article>
   <section class="border-box">
-  <div class="blog-post-header">
-    <h2 class="h2">Edit Your Blog Post</h2>
-  </div>
-  <div class="medium-padding">
-  <form class="edit-post-form">
-    <div>
-      <textarea class="h3 post-title" name="post-title" type="text" value="${{post.title}}">{{post.title}}</textarea>
-      <textarea class="h3 post-message post" name="post-message" type="text" value="${{post.message}}">{{post.message}}</textarea>
+    <div class="blog-post-header">
+      <h2 class="h2">Edit Your Blog Post</h2>
     </div>
-    {{!-- <div>
-      {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-      {{comment_text}}
-    </div> --}}
-    <div class="center-button">
-    <button class="submit" type="submit">
-      <h2 class="h2">Updated Blog</h2>
-    </button>
-    <button class="submit delete-post-btn" type="button">
-      <h2 class="h2">Delete Blog</h2>
-    </button>
-    <button class="submit" type="submit">
-            <a class="h2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
-    </button>
+    <div class="medium-padding">
+      <form class="edit-post-form">
+        <div>
+          <textarea class="h3 post-title" name="post-title" type="text"
+            value="${{post.title}}">{{post.title}}</textarea>
+          <textarea class="h3 post-message post" name="post-message" type="text"
+            value="${{post.message}}">{{post.message}}</textarea>
+        </div>
+        <div class="center-button">
+          <button class="submit" type="submit">
+            <h2 class="h2">Updated Blog</h2>
+          </button>
+          <button class="submit delete-post-btn" type="button">
+            <h2 class="h2">Delete Blog</h2>
+          </button>
+          <button class="submit" type="submit">
+            <a class="h2" href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment"
+              post.comments.length}}</a>
+          </button>
+        </div>
+      </form>
     </div>
-
-  </form>
-  </div>
-</section>
+  </section>
 </article>
 
 <form class="comment-form post">

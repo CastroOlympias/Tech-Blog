@@ -3,23 +3,7 @@ const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
-  Comment.findAll({
-    where: {
-      comment_id: req.session.comment_id
-    },
-    // attributes: [
-    //   'id',
-    //   'message',
-    //   'title',
-    //   'created_at',
-    //   [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
-    // ],
-    order: [[
-      'created_at', 'DESC'
-    ]],
-  })
-
-  
+  Comment.findAll()
     .then(dbCommentData => res.json(dbCommentData))
     .catch(err => {
       console.log(err);
@@ -28,7 +12,6 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-  // expects => {comment_text: "This is the comment", user_id: 1, post_id: 2}
   Comment.create({
     comment_text: req.body.comment_text,
     user_id: req.session.user_id,
