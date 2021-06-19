@@ -1,12 +1,13 @@
 <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
+  <section class="border-box">
+  <div class="blog-post-header">
+    <h2 class="h2">Edit Your Blog Post</h2>
+  </div>
+  <div class="medium-padding">
   <form class="edit-post-form">
     <div>
-      <textarea name="post-title" type="text" value="${{post.title}}">{{post.title}}</textarea>
-      <textarea name="post-message" type="text" value="${{post.message}}">{{post.message}}</textarea>
+      <textarea class="h3 post-title" name="post-title" type="text" value="${{post.title}}">{{post.title}}</textarea>
+      <textarea class="h3 post-message" name="post-message" type="text" value="${{post.message}}">{{post.message}}</textarea>
     </div>
     <div>
       {{post.vote_count}} {{format_plural "point" post.vote_count}} by you on {{format_date post.created_at}}
@@ -17,11 +18,13 @@
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
   </form>
+  </div>
+</section>
 </article>
 
-<form class="comment-form">
+<form class="comment-form post">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea placeholder="Please enter a comment" class="h3" name="comment-body"></textarea>
   </div>
 
   <div>
