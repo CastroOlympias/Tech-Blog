@@ -4,21 +4,24 @@
   </div>
   <div>
     <form class="new-post-form">
-      <div class="post-message">
-        <textarea class="post-message" placeholder="Enter Blog Post Title and Synopsis" type="text" id="post-title"
+      <div class="medium-padding">
+        <textarea placeholder="Enter Blog Post Title and Synopsis" type="text" class="h3 post-title"
           name="post-title"></textarea>
       </div>
-      <div class="post-message">
-        <textarea placeholder="Enter Blog Post Here" id="post-message" name="post-message"></textarea>
+      <div class="medium-padding">
+        <textarea placeholder="Enter Blog Post Here" class="h3 post-message" name="post-message"></textarea>
       </div>
-      <button type="submit" class="btn">Create</button>
+      <div class="center-button">
+      <button type="submit" class="submit">
+        <h2 class="h2">Submit Post to Your Blog</h2>
+        </button>
+        </div>
     </form>
   </div>
 </section>
 
 {{#if posts.length}}
 <section>
-  <h2>Your Blog Posts</h2>
   <ol>
     {{#each posts as |post|}}
     <li>
