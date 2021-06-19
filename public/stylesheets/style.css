@@ -236,7 +236,16 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  font-size: 20px;
+  color: rgb(46, 25, 3);
+  background-color: rgb(181, 238, 186);
+}
+
+.comment:nth-child(even) {
+  border-radius: 15px;
+  font-size: 20px;
+  color: rgb(181, 238, 186);
+  background: rgb(46, 25, 3);
 }
 
 .comment .meta {
