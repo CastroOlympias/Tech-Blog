@@ -15,6 +15,13 @@ body, html {
 .header {
   padding: 20px;
   background-color: rgb(46, 25, 3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .h1 {
@@ -26,6 +33,11 @@ body, html {
   color: rgb(181, 238, 186);
 }
 
+.h3 {
+  color: rgb(46, 25, 3) 4px;
+  font-size: 6100;
+}
+
 .border-box {
   border: solid rgb(46, 25, 3) 4px;
   border-radius: 15px;
@@ -33,7 +45,9 @@ body, html {
 
 .blog-post-header {
   padding: 10px;
-  background: rgb(46, 25, 3);;
+  background: rgb(46, 25, 3);
+  display: flex;
+  justify-content: space-between;
 }
 
 .post-message {
@@ -54,9 +68,18 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  font-size: 25px;
+  color: rgb(181, 238, 186);
   font-weight: bold;
   transition: color .1s;
+}
+
+.edit-post {
+  background: rgb(46, 25, 3);
+  width: 150px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 15px;
 }
 
 a:hover {
@@ -95,7 +118,7 @@ textarea:focus, input:focus {
 }
 
 textarea {
-  min-width: 40%;
+  min-width: 100%;
   min-height: 100px;
 }
 
@@ -116,14 +139,14 @@ form label {
   flex-direction: column;
 } */
 
-header {
+/* header {
   border-bottom: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
   width: 100%;
-}
+} */
 
 main {
   flex: 1;

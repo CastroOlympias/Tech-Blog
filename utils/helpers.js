@@ -1,9 +1,13 @@
 module.exports = {
   format_date: date => {
     return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(
-      date
-    ).getFullYear()}`;
+      date).getFullYear()}`;
   },
+
+  format_time: time => {
+    return `${new Date(time).getHours()}:${new Date(time).getMinutes()}:${new Date(time).getSeconds()}`;
+  },
+
   // format_url: url => {
   //   return url
   //     .replace('http://', '')

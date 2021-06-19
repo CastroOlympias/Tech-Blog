@@ -46,14 +46,17 @@ Post.init(
       ]
     },
     title: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    message: {
-      type: DataTypes.STRING(1000),
+      type: DataTypes.STRING(500),
       allowNull: false,
       validate: {
-        len: [1,1000]
+        len: [1,500]
+      }
+    },
+    message: {
+      type: DataTypes.STRING(5000),
+      allowNull: false,
+      validate: {
+        len: [1,5000]
       }
     },
     user_id: {
