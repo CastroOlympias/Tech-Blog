@@ -261,6 +261,20 @@ main {
   width: 60%;
 }
 
+.login-btn {
+  border: none;
+  margin-top: 5px;
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: rgb(181, 238, 186);
+
+}
+
+.login-btn:hover {
+  background-color: rgb(231, 248, 232);
+}
+
 .center {
   display: flex;
   flex-wrap: wrap;
