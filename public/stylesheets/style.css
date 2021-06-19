@@ -133,13 +133,13 @@ textarea, input {
 
 textarea:focus, input:focus {
   outline: none;
-  border: 1px solid #e9f0f8;
+  border: 2px solid #83bdff;
 }
 
 textarea {
   min-width: 100%;
   min-height: 100px;
-  background-color: rgb(189, 206, 206);
+  background-color: rgb(245, 255, 239);
 }
 
 /* form > div {
@@ -259,6 +259,7 @@ main {
 
 .user-input {
   width: 60%;
+  background-color: rgb(245, 255, 239);
 }
 
 .login-btn {
@@ -271,6 +272,22 @@ main {
 
 }
 
+.comment-vote {
+  display: flex;
+  justify-content: center;
+  background: rgb(46, 25, 3);
+  border: 0;
+  padding: 1%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.comment-vote:hover {
+  background-color: rgb(65, 35, 3);
+}
+
 .login-btn:hover {
   background-color: rgb(231, 248, 232);
 }
@@ -279,7 +296,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .edit-post-form {
   margin-bottom: 5%;
