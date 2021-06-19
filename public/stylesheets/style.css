@@ -231,6 +231,7 @@ main {
 }
 
 .comment {
+  font-size: 20px;
   padding: 1%;
   margin-bottom: 1%;
 }
@@ -249,9 +250,9 @@ main {
 }
 
 .comment .meta {
-  font-size: 90%;
-  margin-bottom: .5%;
-  opacity: .6;
+  
+  margin-bottom: 10px;
+  
 }
 
 .new-post-form input {
