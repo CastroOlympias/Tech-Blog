@@ -5,6 +5,9 @@
 ## Description
 This is a basic tech blog, or blog of any kind really. Does it make you want mint chocolate-chip ice-cream?
 
+Link to the Heroku app <a href="https://castro-olympias-tech-blog.herokuapp.com/">Tech-Blog</a>
+
+
 <img src="https://github.com/CastroOlympias/Tech-Blog/blob/main/media/Tech-Blog%20Gif.gif"/>
 
 ## Table of Contents
