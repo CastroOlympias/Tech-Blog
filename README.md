@@ -72,7 +72,7 @@ Documentation:
 * <a href="https://www.npmjs.com/package/bcrypt">node.bcrypt.js</a> A library to help you hash passwords.
 
 ## Testing
-    Testing is performed by the Insomnia software for the end points, but this is fully functional application so if the front end doesn't work, then there's your test too haha.
+Testing is performed by the Insomnia software for the end points, but this is fully functional application so if the front end doesn't work, then there's your test too haha.
 
 ## Questions
 * Git Hub Link: https://github.com/CastroOlympias
